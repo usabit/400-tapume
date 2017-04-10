@@ -1,0 +1,26 @@
+{
+  "name": "beluga-tapume",
+  "version": "1.0.0",
+  "description": "Página temporária da Rede Beluga",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Usabit <contato@usabit.com.br>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.13.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-stylus": "^2.6.0",
+    "jeet": "^7.1.0",
+    "nib": "^1.1.2",
+    "run-sequence": "^1.2.2",
+    "rupture": "^0.6.2"
+  }
+}

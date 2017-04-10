@@ -1,0 +1,42 @@
+flex-version = flex
+support-for-ie = true
+vendor-prefixes = official
+
+@import 'nib'
+@import 'rupture'
+@import 'jeet'
+
+rupture.scale = 0     600px    800px          1050px   1200px    1400px   1500px
+rupture.scale-names = 'mobile' 'small-tablet' 'tablet' 'desktop' 'hd'     'wrap-break'
+
+global-reset()
+
+@import "_definitions/*";
+// @import "_partials/*";
+@import "elements/*";
+// @import "pages/*";
+
+@-ms-viewport{
+  width: device-width;
+}
+
+.wrapper {
+  width 90%
+  max-width 1270px
+  margin 0 auto
+}
+
+.clearfix {
+    clearfix()
+}
+
+.hide-mobile {
+    +below(850px){
+        display none
+    }
+}
+.only-mobile {
+    +above(850px){
+        display none
+    }
+}

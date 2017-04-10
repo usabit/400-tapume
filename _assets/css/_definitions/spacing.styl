@@ -1,0 +1,63 @@
+sizes = 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115
+for num in sizes
+  .m-{num}
+    margin: unit(num, px)
+  .mb-{num}
+    margin-bottom: unit(num, px)
+  .mt-{num}
+    margin-top: unit(num, px)
+  .ml-{num}
+    margin-left: unit(num, px)
+  .mr-{num}
+    margin-right: unit(num, px)
+  .mtb-{num}
+    margin-top: unit(num, px)
+    margin-bottom: unit(num, px)
+  .mlr-{num}
+    margin-left: unit(num, px)
+    margin-right: unit(num, px)
+
+  .n-m-{num}
+    margin: unit(num * -1, px)
+  .n-mb-{num}
+    margin-bottom: unit(num * -1, px)
+  .n-mt-{num}
+    margin-top: unit(num * -1, px)
+  .n-ml-{num}
+    margin-left: unit(num * -1, px)
+  .n-mr-{num}
+    margin-right: unit(num * -1, px)
+    
+  +below('mobile')
+    .mobile-n-m-{num}
+      margin: unit(num * -1, px)
+    .mobile-n-mb-{num}
+      margin-bottom: unit(num * -1, px)
+    .mobile-n-mt-{num}
+      margin-top: unit(num * -1, px)
+    .mobile-n-ml-{num}
+      margin-left: unit(num * -1, px)
+    .mobile-n-mr-{num}
+      margin-right: unit(num * -1, px)
+
+  
+  .p-{num}
+    padding: unit(num, px)
+  .pb-{num}
+    padding-bottom: unit(num, px)
+  .pt-{num}
+    padding-top: unit(num, px)
+  .pl-{num}
+    padding-left: unit(num, px)
+  .pr-{num}
+    padding-right: unit(num, px)
+  .ptb-{num}
+    padding-top: unit(num, px)
+    padding-bottom: unit(num, px)
+  .plr-{num}
+    padding-left: unit(num, px)
+    padding-right: unit(num, px)
+    
+.flex-spacer {
+  flex 1
+}
